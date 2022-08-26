@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form-container{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-container form table td input{
+            padding: 5px 0 0 30px;
+            margin: 15px 0 0 30px;
+        }
+        .form-container form table td select{
+            padding: 5px  30px 0 20px;
+            margin: 15px 0 0 30px;
+        }
+        #address{
+            padding: 30px 0 0 30px;
+        }
+        .form-container form{
+            border: 1px solid black;
+            background: #dada4c;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <form>
+        <h2 style="background: cyan">Đăng ký học viên</h2>
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio"><label>Nam</label>
+                    <input type="radio"><label>Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text" id="address"></td>
+            </tr>
+            <tr>
+                <td>Lớp</td>
+                <td>
+                    <select>
+                        <option>---Chọn lớp---</option>
+                        <option>JS07</option>
+                        <option>JS07</option>
+                        <option>JS07</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <button>Đăng ký</button>
+        <input type="button" value="Nhập lại" onclick="window.location.reload()">
+    </form>
+</div>
+</body>
+</html>
